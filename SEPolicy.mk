@@ -23,9 +23,11 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR := \
 PRODUCT_PUBLIC_SEPOLICY_DIRS := \
     $(PRODUCT_PUBLIC_SEPOLICY_DIRS) \
     $(SEPOLICY_PATH)/generic/product/public \
-    $(SEPOLICY_PATH)/qva/product/public 
+    $(SEPOLICY_PATH)/qva/product/public
 
 PRODUCT_PRIVATE_SEPOLICY_DIRS := \
     $(PRODUCT_PRIVATE_SEPOLICY_DIRS) \
     $(SEPOLICY_PATH)/generic/product/private \
     $(SEPOLICY_PATH)/qva/product/private
+
+-include device/octavi/sepolicy/qcom/sepolicy.mk
